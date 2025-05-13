@@ -1,0 +1,17 @@
+ICD_train_file: '/your_path/RAD/csv_files/skincap_50_train_set.csv'
+ICD_test_file: '/your_path/RAD/csv_files/skincap_50_test_set.csv'
+
+image_res: 512
+batch_size: 16
+test_batch_size: 16
+grad_accumulation_steps: 1
+num_workers: 8
+test_num_workers: 8
+temp: 0.07
+mlm_probability: 0.15
+queue_size: 8192
+momentum: 0.995
+alpha: 0.4
+
+optimizer: {opt: adamw, lr: 0.0001, weight_decay: 0.01}
+schedular: {sched: cosine, lr: 0.00005, epochs: 30, min_lr: 0.000001, decay_rate: 1, warmup_lr: 0.000001, warmup_epochs: 20, cooldown_epochs: 0}
