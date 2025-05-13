@@ -8,7 +8,7 @@ All sensitive information (e.g., author names, institution details) has been ano
 
 ## Requirements
 
-Our environment are provided in RAD.yaml (conda) and requirements.txt (pip).
+Our environment is provided in RAD.yaml (conda) and requirements.txt (pip).
 
 To install:
 ```
