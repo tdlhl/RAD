@@ -50,7 +50,7 @@ Due to licensing restrictions, we cannot redistribute the datasets directly. Bel
     python 2_convert_label_to_binary
     python 3_split_train_test.py
     ```
-3. Copy the processed csv file into the `csv_files` directory
+3. Copy the processed CSV file into the `csv_files` directory
 
 > Harvard-FairVLMed Dataset
 - Access : Apply via Harvard-FairVLMed [GitHub repository](https://github.com/Harvard-Ophthalmology-AI-Lab/FairCLIP ).
@@ -58,28 +58,28 @@ Due to licensing restrictions, we cannot redistribute the datasets directly. Bel
 - License : Use restricted to non-commercial research under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 - Preprocessing : 
-1. Apply for access to the dataset in their [GitHub repository](https://github.com/Harvard-Ophthalmology-AI-Lab/FairCLIP ). The original google drive [link](https://drive.google.com/drive/folders/1bkeifigwOAfnsLvup9mJOSNeA3WsvA2l). 
+1. Apply for access to the dataset in their [GitHub repository](https://github.com/Harvard-Ophthalmology-AI-Lab/FairCLIP ). The original Google Drive [link](https://drive.google.com/drive/folders/1bkeifigwOAfnsLvup9mJOSNeA3WsvA2l). 
 2. To process the files: We use the `note` column as text modality, the `image` column corresponding to filename as image modality. The `use` column is the division of the training set and the test set. The `glaucoma` column is the label.
-3. Put the processed csv file into the `csv_files` directory
+3. Put the processed CSV file into the `csv_files` directory
 
 
 > NACC Dataset
 - Access : Register at NACC Data [Portal](https://naccdata.org/).
 - License : Use requires adherence to NACC data sharing agreements.
-- Preprocessing : The code for EHR cleaning is in the `./preprocess/nacc/nacc.py` file. Please refer to the Appendix in our paper for the detailed preprocess of NACC.
+- Preprocessing : The code for EHR cleaning is in the `./preprocess/nacc/nacc.py` file. Please refer to the Appendix in our paper for the detailed preprocessing of NACC.
 
 
-## Inference Guidance:
+## Training Guidance:
 - S1. Build the environment following the `Requirements`.
 
-- S2. Prepare the data following the `Data Preprocess`. Make sure that the csv file path is consistent with the corresponding yaml file in the `configs` directory.
+- S2. Prepare the data following the `Data Preprocess`. Make sure that the CSV file path is consistent with the corresponding yaml file in the `configs` directory.
 
 - S3. Run the sample scripts in the main directory. Taking the MIMIC-ICD53 dataset as an example, use the following command:
     ```
     cd /your_path/RAD
     sh icd.sh
     ```
-    Note that our experiments are conducted on the `slurm` system, you can also run the python file directly. And please adjust the `batch size` in `configs` according to the computing resources.
+    Note that our experiments are conducted on the `slurm` system, you can also run the Python file directly. And please adjust the `batch size` in `configs` according to the computing resources.
 
 
  
