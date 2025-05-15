@@ -77,7 +77,7 @@ Due to licensing restrictions, we cannot redistribute the datasets directly. Bel
 
 - S3. The retrieved and refined guidelines for each dataset are provided in the `guideline` directory. To construct your own retrieval knowledge corpus, please refer to the details in our paper.
 
-- S3. Run the sample scripts in the main directory. Taking the MIMIC-ICD53 dataset as an example, use the following command:
+- S4. Run the sample scripts in the main directory. Taking the MIMIC-ICD53 dataset as an example, use the following command:
     ```
     cd /your_path/RAD
     sh icd.sh
