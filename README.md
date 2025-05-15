@@ -68,8 +68,6 @@ Due to licensing restrictions, we cannot redistribute the datasets directly. Bel
 - License : Use requires adherence to NACC data sharing agreements.
 - Preprocessing : The code for EHR cleaning is in the `./preprocess/nacc/nacc.py` file. Please refer to the Appendix in our paper for the detailed preprocessing of NACC.
 
-> Retrieve Medical Knowledge Corpus
-- 
 
 
 ## Training Guidance:
