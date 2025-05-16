@@ -225,7 +225,7 @@ if __name__ == '__main__':
     parser.add_argument('--contrast_ratio_text', default=0.1, type=float)
     parser.add_argument('--temperature_text', default=0.5, type=float)
     parser.add_argument('--contrast_ratio_vision', default=0.1, type=float)
-    parser.add_argument('--temperature_vision', default=1.0, type=float)
+    parser.add_argument('--temperature_vision', default=2.0, type=float)
 
     parser.add_argument('--dist_backend', default='nccl')
 
