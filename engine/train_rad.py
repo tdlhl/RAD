@@ -367,7 +367,6 @@ def train_grad_acc(model, model_guideline, image_encoder, text_encoder, tokenize
             optimizer.step()
             optimizer.zero_grad()
 
-            # 更新学习率
             if epoch == 0 and i % step_size == 0 and i <= warmup_iterations:
                 scheduler.step(i // step_size)
 
