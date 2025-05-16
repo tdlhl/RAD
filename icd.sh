@@ -20,7 +20,5 @@ srun -p medai_llm --quotatype=spot \
 --guideline_path ./guideline/qwen_maxtoken2k_icd53_4sources.jsonl \
 --max_length 512 \
 --embed_dim 768 \
---temperature_text 0.5 \
 --contrast_ratio_text 0.1 \
---temperature_vision 4.0 \
 --contrast_ratio_vision 0.001 \
