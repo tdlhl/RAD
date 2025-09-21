@@ -12,7 +12,7 @@ echo "Rendezvous Endpoint: $MASTER_ADDR:$MASTER_PORT"
 
 srun -p medai_llm --quotatype=spot \
 --cpus-per-task=4 \
---gres=gpu:1 python main_rad_two.py \
+--gres=gpu:1 python main_rad_icd.py \
 --config ./configs/ICD53.yaml \
 --output_dir /your_path/RAD_clean/outputs/icd53-rad_two-topk10-vision_res50-text_cbert \
 --loss_ratio 0.1 \
