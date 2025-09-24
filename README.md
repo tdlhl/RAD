@@ -1,7 +1,5 @@
 # RAD
-This is the anonymous code repository for `RAD: Towards Trustworthy Retrieval-Augmented Multi-modal Clinical Diagnosis`. 
-
-All sensitive information (e.g., author names, institution details) has been anonymized for peer review.
+This is the code repository for our NeurIPS 2025 paper `RAD: Towards Trustworthy Retrieval-Augmented Multi-modal Clinical Diagnosis`. 
 
 <img src="docs/RAD_framework.jpg" alt="" align=center />
 
@@ -84,5 +82,6 @@ Due to licensing restrictions, we cannot redistribute the datasets directly. Bel
     ```
     Note that our experiments are conducted on the `slurm` system; you can also run the Python file directly. And the `batch size` in `configs` should be adjusted according to the computing resources.
 
+# Citation
+Citation will be added upon publication.
 
- 
