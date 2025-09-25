@@ -1,5 +1,5 @@
 # RAD
-This is the code repository for our NeurIPS 2025 paper `RAD: Towards Trustworthy Retrieval-Augmented Multi-modal Clinical Diagnosis`. 
+This is the official code repository for our NeurIPS 2025 paper `RAD: Towards Trustworthy Retrieval-Augmented Multi-modal Clinical Diagnosis`. 
 
 <img src="docs/RAD_framework.jpg" alt="" align=center />
 
