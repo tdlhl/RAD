@@ -1,8 +1,16 @@
 # [NeurIPS 2025] RAD
-This is the code repository for our NeurIPS 2025 paper `RAD: Towards Trustworthy Retrieval-Augmented Multi-modal Clinical Diagnosis`. 
+This is the code repository for our NeurIPS 2025 paper [RAD: Towards Trustworthy Retrieval-Augmented Multi-modal Clinical Diagnosis](https://openreview.net/pdf?id=Iicv9iTPcU). 
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2509.19980" target="_blank"><img src="https://img.shields.io/badge/arXiv-2505.21497-red"></a>
+  <!-- <a href="https://paper2poster.github.io/" target="_blank"><img src="https://img.shields.io/badge/Project-Page-brightgreen"></a> -->
+  <!-- <a href="https://huggingface.co/datasets/Paper2Poster/Paper2Poster" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-orange"></a> -->
+  <a href="https://huggingface.co/papers/2509.19980" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Daily Papers-red"></a>
+</p>
 
 <img src="docs/RAD_framework.jpg" alt="" align=center />
 
+**Abstract**: Clinical diagnosis is a highly specialized discipline requiring both domain expertise and strict adherence to rigorous guidelines. While current AI-driven medical research predominantly focuses on knowledge graphs or natural text pretraining paradigms to incorporate medical knowledge, these approaches primarily rely on implicitly encoded knowledge within model parameters, neglecting task-specific knowledge required by diverse downstream tasks. To address this limitation, we propose Retrieval-Augmented Diagnosis (RAD), a novel framework that explicitly injects external knowledge into multimodal models directly on downstream tasks. Specifically, RAD operates through three key mechanisms: retrieval and refinement of disease-centered knowledge from multiple medical sources, a guideline-enhanced contrastive loss that constrains the latent distance between multi-modal features and guideline knowledge, and the dual transformer decoder that employs guidelines as queries to steer cross-modal fusion, aligning the models with clinical diagnostic workflows from guideline acquisition to feature extraction and decision-making. Moreover, recognizing the lack of quantitative evaluation of interpretability for multimodal diagnostic models, we introduce a set of criteria to assess the interpretability from both image and text perspectives. Extensive evaluations across four datasets with different anatomies demonstrate RAD's generalizability, achieving state-of-the-art performance. Furthermore, RAD enables the model to concentrate more precisely on abnormal regions and critical indicators, ensuring evidence-based, trustworthy diagnosis. Our code is available at https://github.com/tdlhl/RAD.
 
 ## Requirements
 
@@ -83,5 +91,16 @@ Due to licensing restrictions, we cannot redistribute the datasets directly. Bel
     Note that our experiments are conducted on the `slurm` system; you can also run the Python file directly. And the `batch size` in `configs` should be adjusted according to the computing resources.
 
 # Citation
-Citation will be added upon publication.
+If you find our work useful for your research or project, please consider giving a star ⭐ or a citation.
+```
+@inproceedings{
+li2025rad,
+title={{RAD}: Towards Trustworthy Retrieval-Augmented Multi-modal Clinical Diagnosis},
+author={Haolin Li and Tianjie Dai and Zhe Chen and Siyuan Du and Jiangchao Yao and Ya Zhang and Yanfeng Wang},
+booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+year={2025},
+url={https://openreview.net/forum?id=Iicv9iTPcU}
+}
+```
+
 
